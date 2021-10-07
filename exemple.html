@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <script  type="module">
+    import miniJHighlight from './mini-j-highlight.js';
+    window.addEventListener('load', function(event) {
+        document.querySelectorAll('[type="mini-j-highlight"]').forEach((e)=>{
+            const container = document.createElement("div" );
+            e.parentNode.insertBefore(container, e);
+            e.style.display='none';
+            miniJHighlight(container, e.innerText);
+        });
+    }); 
+    </script>
+</head>
+<body>
+A SQL exemple :
+<code type="mini-j-highlight">
+    select * from toto
+    where id > 42 ;
+</code>
+<hr>
+
+A JS exemple : 
+<code type="mini-j-highlight">
+import miniJHighlight from './mini-j-highlight.js';
+window.addEventListener('load', function(event) {
+    document.querySelectorAll('[type="mini-j-highlight"]').forEach((e)=>{
+        const container = document.createElement("div" );
+        e.parentNode.insertBefore(container, e);
+        e.style.display='none';
+        miniJHighlight(container, e.innerText);
+    });
+}); 
+</code>
+
+<hr>
+A Java exemple :
+<code type="mini-j-highlight">
+/* Affichage console */
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!"); 
+    }
+}
+</code>
+</body>
+</html>
+

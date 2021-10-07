@@ -1,0 +1,14 @@
+{
+    "name": "@blobmaster/mini-j-highlight",
+    "version": "0.0.1",
+    "description": "A highlight tool that could higlight any language in a best effort manner.",
+    "scripts": {
+        "compress": "uglifyjs mini-j-highlight.js --compress --mangle --warn --output mini-j-highlight.min.js",
+        "clean": "rm mini-j-highlight.min.js"
+    },
+    "author": "Sébastien Cheminel",
+    "devDependencies": {
+        "np": "^7.5.0",
+        "uglify-js": "^3.14.2"
+    }
+}
