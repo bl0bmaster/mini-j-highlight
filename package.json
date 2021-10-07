@@ -1,7 +1,24 @@
 {
     "name": "@blobmaster/mini-j-highlight",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A highlight tool that could higlight any language in a best effort manner.",
+    "license": "GPL V3",
+    "repository": "github:bl0bmaster/mini-j-highlight",
+    "main": "mini-j-highlight.js",
+    "keywords": [
+        "highlighter",
+        "javascript",
+        "c",
+        "c#",
+        "ADA",
+        "bash",
+        "rust",
+        "java",
+        "ruby",
+        "python",
+        "perl",
+        "sql"
+    ],
     "scripts": {
         "compress": "uglifyjs mini-j-highlight.js --compress --mangle --warn --output mini-j-highlight.min.js",
         "clean": "rm mini-j-highlight.min.js"
